@@ -1,11 +1,13 @@
+
+import { SunIcon, MoonIcon  } from '@heroicons/react/24/outline'
 import{ useEffect, useState } from "react";
 
 function ThemeBtn() {
     const [theme, setTheme] = useState(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
       return "dark";
     }
-    return "light";
+      return "light";
     });
 
     useEffect(() => {
@@ -23,9 +25,13 @@ function ThemeBtn() {
   return (
     <button onClick={handleTheme} className="flex justify-end items-center bg-transparent text-4xl">
     {theme === "light" ? (
-      <i className="bx bx-moon text-black"></i>
+      <MoonIcon
+        className='text-black size-10'
+      />
     ) : (
-      <i className="bx bx-sun text-white"></i>
+      <SunIcon
+        className='text-white size-10'
+      />
     )}
     </button>
   )
