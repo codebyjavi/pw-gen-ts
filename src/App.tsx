@@ -8,8 +8,9 @@ function App() {
 
     return (
     <div className="flex flex-col justify-center min-h-dvh px-3 gap-10 md:gap-10 dark:text-neutral-200">
-
-        <ThemeBtn/>
+        <header className='flex justify-end'>
+          <ThemeBtn/>
+        </header>
 
         <div className="flex justify-between items-center md:w-[30rem] bg-neutral-200 rounded-md p-2">
 

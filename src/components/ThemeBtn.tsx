@@ -23,16 +23,18 @@ function ThemeBtn() {
     }
 
   return (
-    <button onClick={handleTheme} className="flex justify-end items-center bg-transparent text-4xl">
-    {theme === "light" ? (
-      <MoonIcon
-        className='text-black size-10'
-      />
-    ) : (
-      <SunIcon
-        className='text-white size-10'
-      />
-    )}
+    <button 
+      onClick={handleTheme}
+    >
+      {theme === "light" ? (
+        <MoonIcon
+          className='text-black size-10'
+        />
+      ) : (
+        <SunIcon
+          className='text-white size-10'
+        />
+      )}
     </button>
   )
 }

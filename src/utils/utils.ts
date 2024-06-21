@@ -1,9 +1,9 @@
-type Categorie = {
+type Category = {
     id: number,
     name: string
 }
 
-export const Categories : Categorie[] = [
+export const Categories : Category[] = [
     {
         id: 1,
         name: 'Uppercase (A-Z)'
